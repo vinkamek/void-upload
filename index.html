@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>VOID Upload</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="logo">
+            VOID<span>.</span>
+        </div>
+
+        <h1>
+            Upload Your Image
+        </h1>
+
+        <p class="subtitle">
+            Upload, store and share your images easily.
+        </p>
+
+        <div class="upload-box">
+
+            <div class="upload-icon">
+                📷
+            </div>
+
+            <h3>
+                Choose your image
+            </h3>
+
+            <p>
+                JPG, PNG or WEBP
+            </p>
+
+            <input
+                type="file"
+                id="fileInput"
+                accept="image/jpeg,image/png,image/webp"
+            >
+
+            <label
+                for="fileInput"
+                class="choose-button"
+            >
+                Choose Image
+            </label>
+
+        </div>
+
+        <div
+            id="preview"
+            class="preview"
+        ></div>
+
+        <button
+            id="uploadButton"
+            class="upload-button"
+            disabled
+        >
+            Upload Image
+        </button>
+
+        <div
+            id="result"
+            class="result"
+        ></div>
+
+    </main>
+
+    <script
+        src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"
+    ></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
